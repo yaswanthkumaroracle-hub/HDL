@@ -1,0 +1,4 @@
+COMMENT Data for Business Object: ActionReasons Version: V2 Created on: 11-09-2025 
+METADATA|ActionReasons|ActionReasonCode|ActionReason|StartDate|SourceSystemId|SourceSystemOwner
+MERGE|ActionReasons|Salary_Change_C1|Salary_Change_N1|2024/01/01|HDL_LOAD_1|HDL_LOAD
+MERGE|ActionReasons|Salary_Change_C2|Salary_Change_N2|2025/01/01|HDL_LOAD_2|HDL_LOAD

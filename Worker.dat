@@ -1,0 +1,20 @@
+METADATA|Worker|PersonNumber|EffectiveStartDate|ActionCode|DateOfBirth|StartDate|SourceSystemId|SourceSystemOwner
+MERGE|Worker|8935689|2025/01/01|ADD_PEN_WKR|1999/05/05|2025/01/01|TK148315|HDL_LOAD
+
+METADATA|PersonEmail|PersonId(SourceSystemId)|EmailAddress|EmailType|DateFrom|SourceSystemId|SourceSystemOwner|PrimaryFlag
+MERGE|PersonEmail|TK148315|RAJESHKUMAR04@GMAIL.COM|H1|2025/01/01|TK148321|HDL_LOAD|Y
+
+METADATA|PersonName|PersonId(SourceSystemId)|NameType|EffectiveStartDate|LegislationCode|FirstName|MiddleNames|LastName|SourceSystemId|SourceSystemOwner
+MERGE|PersonName|TK148315|GLOBAL|2025/01/01|US|Tst2|25|TK|TK148316|HDL_LOAD
+
+METADATA|PersonPhone|SourceSystemOwner|SourceSystemId|DateFrom|PersonId(SourceSystemId)|PhoneType|CountryCodeNumber|PhoneNumber|PrimaryFlag|LegislationCode 
+MERGE|PersonPhone|HDL_LOAD|TK148320|2025/01/01|TK148315|W1|1|4789231|Y|US
+
+METADATA|WorkRelationship|PersonId(SourceSystemId)|DateStart|WorkerType|LegalEmployerName|OnMilitaryServiceFlag|PrimaryFlag|RehireRecommendationFlag|SourceSystemId|SourceSystemOwner
+MERGE|WorkRelationship|TK148315|2025/01/01|P|US Legal Entity|N|Y|Y|TK148317|HDL_LOAD
+
+METADATA|WorkTerms|PeriodOfServiceId(SourceSystemId)|LegalEmployerName|EffectiveLatestChange|EffectiveSequence|EffectiveStartDate|AssignmentStatusTypeCode|AssignmentType|BusinessUnitShortCode|FreezeStartDate|FreezeUntilDate|PositionOverrideFlag|PrimaryWorkTermsFlag|PersonNumber|SourceSystemId|SourceSystemOwner|ActionCode|AssignmentNumber|AssignmentName|ProposedUserPersonType
+MERGE|WorkTerms|TK148317|US2 Legal Entity|Y|1|2025/01/01|ACTIVE_PROCESS|PT|US2_BU|2025/08/08|2025/12/08|Y|Y|8935689|TK148318|HDL_LOAD|ADD_PEN_WKR|PT8935689|HCM_Associate|Employee
+
+METADATA|Assignment|WorkTermsAssignmentId(SourceSystemId)|EffectiveLatestChange|EffectiveSequence|EffectiveStartDate|ActionCode|AssignmentStatusTypeCode|AssignmentType|BusinessUnitShortCode|PrimaryFlag|SourceSystemId|SourceSystemOwner|DepartmentName|JobCode|LocationCode|AssignmentNumber|AssignmentName|ProjectedStartDate|ProposedUserPersonType
+MERGE|Assignment|TK148318|Y|1|2025/01/01|ADD_PEN_WKR|ACTIVE_PROCESS|P|US2_BU|Y|TK148319|HDL_LOAD|HSD|3000000367890|7995948499|P8935689|HCM_Associate|2025/01/01|Employee

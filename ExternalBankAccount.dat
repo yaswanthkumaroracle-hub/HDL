@@ -1,0 +1,5 @@
+METADATA|ExternalBankAccount|SourceSystemOwner|SourceSystemId|AccountNumber|BankBranchName|BankName|CountryCode|CurrencyCode
+MERGE|ExternalBankAccount|HDL_LOAD|HDL_BA_1|50100123456789|HDFC Bank CDP|HDFC Bank|CA|CAD
+
+METADATA|ExternalBankAccountOwner|SourceSystemOwner|SourceSystemId|PersonNumber|AccountNumber|BankBranchNumber|BankNumber|CountryCode|CurrencyCode|BankBranchName|BankName|ExternalBankAccountId(SourceSystemId)
+MERGE|ExternalBankAccountOwner|HDL_LOAD|HDL_BA_2|15935746|50100123456789|HDFC_Br_0002275|HDFC0002275|CA|CAD|HDFC Bank CDP|HDFC Bank|HDL_BA_1
